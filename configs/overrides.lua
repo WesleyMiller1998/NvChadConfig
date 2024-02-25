@@ -14,10 +14,12 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    "go",
     "gopls",
     "goimports-reviser",
     "terraform-ls",
+    "shfmt",
+    "stylua",
+    "tflint",
   },
 }
 

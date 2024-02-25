@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 local plugins = {
   {
@@ -8,6 +8,10 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = overrides.treesitter,
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
   },
   {
     "neovim/nvim-lspconfig",
@@ -24,7 +28,7 @@ local plugins = {
       {
         "<leader>f",
         function()
-          require("conform").format({ async = true, lsp_fallback = true })
+          require("conform").format { async = true, lsp_fallback = true }
         end,
         mode = "",
         desc = "Format buffer",
