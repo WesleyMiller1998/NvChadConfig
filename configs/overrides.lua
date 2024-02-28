@@ -5,6 +5,8 @@ M.treesitter = {
     "vim",
     "lua",
     "go",
+    "gomod",
+    "gosum",
     "terraform",
   },
   indent = {
