@@ -17,6 +17,11 @@ local options = {
     timeout_ms = 500,
     lsp_fallback = true,
   },
+  formatters = {
+    ["goimports-reviser"] = {
+      prepend_args = { "-rm-unused" },
+    },
+  },
 }
 
 require("conform").setup(options)

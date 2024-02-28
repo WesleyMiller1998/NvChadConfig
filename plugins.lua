@@ -26,7 +26,7 @@ local plugins = {
     cmd = { "ConformInfo" },
     keys = {
       {
-        "<leader>f",
+        "<leader>fm",
         function()
           require("conform").format { async = true, lsp_fallback = true }
         end,
